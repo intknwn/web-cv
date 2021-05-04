@@ -1,3 +1,12 @@
-h1 {
-  color: red;
-}
+@import "normalize.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "content.scss";
+@import "modules/container.scss";
+@import "modules/contacts.scss";
+@import "modules/header.scss";
+@import "modules/skills.scss";
+@import "modules/projects.scss";
+@import "modules/jobs.scss";
+@import "modules/courses.scss";
+@import "modules/footer.scss";

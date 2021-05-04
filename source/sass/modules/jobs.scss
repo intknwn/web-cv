@@ -1,0 +1,101 @@
+.jobs__list-item {
+  position: relative;
+  display: flex;
+
+  margin-bottom: 40px;
+  padding: 30px;
+
+  border-radius: 16px;
+
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.jobs__logo-wrapper {
+  min-width: 190px;
+}
+
+.jobs__description {
+  font-size: 16px;
+}
+
+.jobs__description h3 {
+  font-size: 18px;
+}
+
+.jobs__description a {
+  color: $h3-color;
+
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.jobs__employer-location {
+  margin-bottom: 15px;
+}
+
+.jobs__employee-title,
+.jobs__duties,
+.jobs__achievements {
+  font-family: "Open Sans Bold", "Arail", sans-serif;
+  font-weight: 700;
+}
+
+.jobs__employment-duration {
+  margin-bottom: 15px;
+}
+
+.jobs__duties-list,
+.jobs__achievements-list {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.jobs__achievements-list {
+  margin-bottom: 30px;
+}
+
+.jobs__duties-item,
+.jobs__achievements-item {
+  margin-bottom: 5px;
+}
+
+.jobs__duties,
+.jobs__achievements {
+  margin-bottom: 10px;
+}
+
+.jobs__achievements-intro {
+  margin-bottom: 5px;
+}
+
+@media (max-width: $tablet-width) {
+  .jobs__list-item {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .jobs__logo-wrapper {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .jobs__container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .jobs h2 {
+    padding-left: 5px;
+  }
+}

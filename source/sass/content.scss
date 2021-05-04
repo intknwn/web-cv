@@ -1,0 +1,79 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $text-color;
+  background-color: $bg-color;
+  overflow-x: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  color: $h1-color;
+}
+
+h2 {
+  margin-bottom: 50px;
+
+  font-size: 20px;
+  font-variant: small-caps;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: $h2-color;
+
+  text-transform: uppercase;
+}
+
+.icon {
+  fill: $icon-color;
+
+  &:hover,
+  &:focus {
+    fill: $dark-charcoal;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  body {
+    font-size: 16px;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+}

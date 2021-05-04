@@ -4,10 +4,674 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Junior front-end разработчик Дмитрий Неклюдов</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__group header__group--photo">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/nemitya-mobile@1x.webp 1x, img/nemitya-mobile@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="img/nemitya@1x.png 1x, img/nemitya@2x.png 2x">
+          <source type="image/webp" srcset="img/nemitya@1x.webp 1x, img/nemitya@2x.webp 2x">
+          <img class="header__photo" src="img/nemitya@1x.png" srcset="img/nemitya@2x.png 2x" width="250" height="250" alt="Дмитрий Неклюдов">
+        </picture>
+        <p class="header__location">Бали, Индонезия</p>
+        <ul class="header__contacts-list contacts-list">
+          <li>
+            <a href="https://telegram.me/nemitya">
+              <span class="visually-hidden">Мой аккаунт в Telegram</span>
+              <svg class="icon header__icon" role="img" width="25" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/6287754549006">
+              <span class="visually-hidden">Мой аккаунт в WhatsApp</span>
+              <svg class="icon header__icon" role="img" width="25" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:intknwn@gmail.com">
+              <span class="visually-hidden">Моя почта</span>
+              <svg class="icon header__icon" role="img" width="25" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/intknwn">
+              <span class="visually-hidden">Мой аккаунт на Github</span>
+              <svg class="icon header__icon" role="img" width="25" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__group header__group--description">
+        <h1>Привет,<br>меня зовут Митя! <span class="header__emoji header__emoji--hi">👋</span></h1>
+        <p>Я junior front-end разработчик с небольшим коммерческим опытом и здоровыми амбициями.</p>
+        <p>Я люблю:</p>
+        <ul class="header__likes-list">
+          <li>находить решения нетривиальных задач</li>
+          <li>чистый и понятный код</li>
+          <li>узучать новые технологии</li>
+          <li>удобные и эстетичные интерфейсы</li>
+          <!-- а еще печеньки! только никому, тсс.. -->
+        </ul>
+        <p>Хочу стать частью крутой команды, чтобы сделать этот <del>мир</del> веб чуточку лучше, а&nbsp;заказчиков и&nbsp;пользователей счастливее. <span class="header__emoji header__emoji--sparkle">✨</span></p>
+        <p>В&nbsp;ближайшем будущем хочу прокачаться на&nbsp;интересных проектах, и&nbsp;получить коммерческий опыт разработки на&nbsp;React.</p>
+        <p>Я&nbsp;живу на&nbsp;Бали, где последние 5&nbsp;лет работал инструктором по&nbsp;серфингу. Ищу удаленную работу, но&nbsp;также готов рассмотреть возможность переезда.</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="skills">
+      <div class="container skills__container">
+        <h2>Что умею</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item">
+            <img src="img/logo-html.svg" width="50" height="50" alt="HTML">
+            <span>HTML</span>
+          </li>
+          <li class="skills__list-item">
+            <img src="img/logo-css.svg" width="50" height="50" alt="CSS">
+            <span>CSS</span>
+          </li>
+          <li class="skills__list-item">
+            <img src="img/logo-js.svg" width="50" height="50" alt="JavaScript">
+            <span>JavaScript</span>
+          </li>
+          <li class="skills__list-item">
+            <img src="img/logo-sass.svg" width="50" height="50" alt="Sass">
+            <span>Sass</span>
+          </li>
+          <li class="skills__list-item">
+            <img src="img/logo-gulp.svg" width="50" height="50" alt="Gulp">
+            <span>Gulp</span>
+          </li>
+          <li class="skills__list-item">
+            <img src="img/logo-webpack.svg" width="50" height="50" alt="Webpack">
+            <span>Webpack</span>
+          </li>
+          <li class="skills__list-item">
+            <img src="img/logo-react.svg" width="50" height="50" alt="React">
+            <span>React</span>
+          </li>
+          <li class="skills__list-item">
+            <img src="img/logo-redux.svg" width="50" height="50" alt="Redux">
+            <span>Redux</span>
+          </li>
+          <li class="skills__list-item">
+            <img src="img/logo-ps.svg" width="50" height="50" alt="Photoshop">
+            <span>Photoshop</span>
+          </li>
+          <li class="skills__list-item">
+            <img src="img/logo-figma.svg" width="50" height="50" alt="Figma">
+            <span>Figma</span>
+          </li>
+          <li class="skills__list-item">
+            <img src="img/logo-zeplin.svg" width="50" height="50" alt="Zeplin">
+            <span>Zeplin</span>
+          </li>
+          <li class="skills__list-item">
+            <img src="img/logo-nodejs.svg" width="50" height="50" alt="Node.js">
+            <span>Node.js</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="container projects__container">
+        <h2>Что делал</h2>
+        <ul class="projects__list">
+          <li class="projects__list-item">
+            <div class="projects__description">
+              <div class="projects__title-wrapper">
+                <a class="projects__heading-link" name="six-cities" href="/projects/six-cities"><h3>Проект «Шесть городов»</h3></a>
+                <a class="projects__git-link" href="https://github.com/intknwn/991089-six-cities-4">
+                  <span class="visually-hidden">Репозиторий проекта</span>
+                  <svg class="icon projects__git-icon" role="img" width="25" height="25">
+                    <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="projects__image-wrapper">
+                <a class="projects__image-link" href="/projects/six-cities">
+                  <picture>
+                    <source type="image/webp" srcset="img/six-cities-01@1x.webp 1x, img/six-cities-01@2x.webp 2x">
+                    <img src="img/six-cities-01@1x.png" srcset="img/six-cities-01@2x.png 2x" width="250" height="333" alt="Проект «Шесть городов»">
+                  </picture>
+                </a>
+                <a class="projects__image-link" href="/projects/six-cities">
+                  <picture>
+                    <source type="image/webp" srcset="img/six-cities-02@1x.webp 1x, img/six-cities-02@2x.webp 2x">
+                    <img src="img/six-cities-02@1x.png" srcset="img/six-cities-02@2x.png 2x" width="250" height="333" alt="Проект «Шесть городов»">
+                  </picture>
+                </a>
+              </div>
+              <p>«Шесть городов» — сервис для путешественников по мотивам одной всемирно известной онлайн-площадки для размещения и поиска жилья по всему миру.</p>
+              <ul class="projects__features-list">
+                <li class="projects__feature-item">Одностраничное приложение (SPA) на React, Redux, React Router, TypeScript</li>
+                <li class="projects__feature-item">Снепшот и юнит-тесты на Jest, Enzyme</li>
+                <li class="projects__feature-item">Авторизация пользователей</li>
+                <li class="projects__feature-item">Получение и обновление данных об объектах недвижимости с помощью REST API</li>
+                <li class="projects__feature-item">Сортировка</li>
+                <li class="projects__feature-item">Добавление в избранное</li>
+                <li class="projects__feature-item">Интерактивная карта</li>
+                <li class="projects__feature-item">Возможность добавлять комментарии к объектам недвижимости</li>
+              </ul>
+            </div>
+          </li>
+          <li class="projects__list-item">
+            <div class="projects__description">
+              <div class="projects__title-wrapper">
+                <a class="projects__heading-link" name="what-to-watch" href="/projects/what-to-watch"><h3>Проект «Что посмотреть»</h3></a>
+                <a class="projects__git-link" href="https://github.com/intknwn/991089-what-to-watch-4">
+                  <span class="visually-hidden">Репозиторий проекта</span>
+                  <svg class="icon projects__git-icon" role="img" width="25" height="25">
+                    <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="projects__image-wrapper">
+                <a class="projects__image-link" href="/projects/what-to-watch">
+                  <picture>
+                    <source type="image/webp" srcset="img/what-to-watch-01@1x.webp 1x, img/what-to-watch-01@2x.webp 2x">
+                    <img src="img/what-to-watch-01@1x.png" srcset="img/what-to-watch-01@2x.png 2x" width="250" height="333" alt="Проект «Что посмотреть»">
+                  </picture>
+                </a>
+                <a class="projects__image-link" href="/projects/what-to-watch">
+                  <picture>
+                    <source type="image/webp" srcset="img/what-to-watch-02@1x.webp 1x, img/what-to-watch-02@2x.webp 2x">
+                    <img src="img/what-to-watch-02@1x.png" srcset="img/what-to-watch-01@2x.png 2x" width="250" height="333" alt="Проект «Что посмотреть»">
+                  </picture>
+                </a>
+              </div>
+              <p>«Что посмотреть» — приложение онлайн кинотеатра со стандартным функционалом стриминговых платформ.</p>
+              <ul class="projects__features-list">
+                <li class="projects__feature-item">Одностраничное приложение (SPA) на React, Redux, React Router</li>
+                <li class="projects__feature-item">Снепшот и юнит-тесты на Jest, Enzyme</li>
+                <li class="projects__feature-item">Авторизация пользователей</li>
+                <li class="projects__feature-item">Загрузка данных о фильмах с сервера</li>
+                <li class="projects__feature-item">Сортировка фильмов по жанрам</li>
+                <li class="projects__feature-item">Добавление фильмов в список к просмотру</li>
+                <li class="projects__feature-item">Возможность просмотра фильмов онлайн</li>
+                <li class="projects__feature-item">Добавление обзоров к фильмам</li>
+              </ul>
+            </div>
+          </li>
+          <li class="projects__list-item">
+            <div class="projects__description">
+              <div class="projects__title-wrapper">
+                <a class="projects__heading-link" name="big-trip" href="/projects/bigtrip"><h3>Проект «Большое путешествие»</h3></a>
+                <a class="projects__git-link" href="https://github.com/intknwn/991089-big-trip-11">
+                  <span class="visually-hidden">Репозиторий проекта</span>
+                  <svg class="icon projects__git-icon" role="img" width="25" height="25">
+                    <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="projects__image-wrapper">
+                <a class="projects__image-link" href="/projects/bigtrip">
+                  <picture>
+                    <source type="image/webp" srcset="img/bigtrip-01@1x.webp 1x, img/bigtrip-01@2x.webp 2x">
+                    <img src="img/bigtrip-01@1x.png" srcset="img/bigtrip-01@2x.png 2x" width="250" height="333" alt="Проект «Большое путешествие»">
+                  </picture>
+                </a>
+                <a class="projects__image-link" href="/projects/bigtrip">
+                  <picture>
+                    <source type="image/webp" srcset="img/bigtrip-02@1x.webp 1x, img/bigtrip-02@2x.webp 2x">
+                    <img src="img/bigtrip-02@1x.png" srcset="img/bigtrip-02@2x.png 2x" width="250" height="333" alt="Проект «Большое путешествие»">
+                  </picture>
+                </a>
+              </div>
+              <p>Сервис «Большое путешествие» помогает детально спланировать маршрут поездки, рассчитать стоимость путешествия и получить информацию о достопримечательностях.</p>
+              <ul class="projects__features-list">
+                <li class="projects__feature-item">Одностраничное приложение (SPA) на Vanilla JS, Webpack</li>
+                <li class="projects__feature-item">Архитектура приложения на основе MVC и паттерна Observer</li>
+                <li class="projects__feature-item">Получение и обновление данных о путешствии с помощью REST API</li>
+                <li class="projects__feature-item">Построение диаграмм с помощью Chart.js</li>
+                <li class="projects__feature-item">Сортировка</li>
+                <li class="projects__feature-item">Добавление в избранное</li>
+              </ul>
+            </div>
+          </li>
+          <li class="projects__list-item">
+            <div class="projects__description">
+              <div class="projects__title-wrapper">
+                <a class="projects__heading-link" name="israel" href="/projects/israel/"><h3>Проект «Израиль»</h3></a>
+                <a class="projects__git-link" href="https://github.com/intknwn/accelerator-israel">
+                  <span class="visually-hidden">Репозиторий проекта</span>
+                  <svg class="icon projects__git-icon" role="img" width="25" height="25">
+                    <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="projects__image-wrapper">
+                <a class="projects__image-link" href="/projects/israel/">
+                  <picture>
+                    <source type="image/webp" srcset="img/israel-01@1x.webp 1x, img/israel-01@2x.webp 2x">
+                    <img src="img/israel-01@1x.png" srcset="img/israel-01@2x.png 2x" width="250" height="333" alt="Проект «Израиль»">
+                  </picture>
+                </a>
+                <a class="projects__image-link" href="/projects/israel/">
+                  <picture>
+                    <source type="image/webp" srcset="img/israel-02@1x.webp 1x, img/israel-02@2x.webp 2x">
+                    <img src="img/israel-02@1x.png" srcset="img/israel-02@2x.png 2x" width="250" height="333" alt="Проект «Израиль»">
+                  </picture>
+                </a>
+              </div>
+              <p>Посадочная страница студентческой программы «Маса» — совместного проекта правительства Израиля и Еврейского агентства Сохнут.</p>
+              <ul class="projects__features-list">
+                <li class="projects__feature-item">HTML, CSS, JavaScript, Gulp, Webpack</li>
+                <li class="projects__feature-item">Сложная адаптивная сетка </li>
+                <li class="projects__feature-item">Слайдеры</li>
+                <li class="projects__feature-item">Модальные окна</li>
+                <li class="projects__feature-item">Валидация форм</li>
+                <li class="projects__feature-item">Поддержка IE11</li>
+              </ul>
+            </div>
+          </li>
+          <li class="projects__list-item">
+            <div class="projects__description">
+              <div class="projects__title-wrapper">
+                <a class="projects__heading-link" name="bikes" href="/projects/bikes"><h3>Проект «Велосипеды»</h3></a>
+                <a class="projects__git-link" href="https://github.com/intknwn/accelerator-bikes">
+                  <span class="visually-hidden">Репозиторий проекта</span>
+                  <svg class="icon projects__git-icon" role="img" width="25" height="25">
+                    <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="projects__image-wrapper">
+                <a class="projects__image-link" href="/projects/bikes">
+                  <picture>
+                    <source type="image/webp" srcset="img/bikes-01@1x.webp 1x, img/bikes-01@2x.webp 2x">
+                    <img src="img/bikes-01@1x.png" srcset="img/bikes-01@2x.png 2x" width="250" height="333" alt="Проект «Велосипеды»">
+                  </picture>
+                </a>
+                <a class="projects__image-link" href="/projects/bikes">
+                  <picture>
+                    <source type="image/webp" srcset="img/bikes-02@1x.webp 1x, img/bikes-02@2x.webp 2x">
+                    <img src="img/bikes-02@1x.png" srcset="img/bikes-02@2x.png 2x" width="250" height="333" alt="Проект «Велосипеды»">
+                  </picture>
+                </a>
+              </div>
+              <p>Посадочная страница интернет-магазина велосипедов.</p>
+              <ul class="projects__features-list">
+                <li class="projects__feature-item">HTML, CSS, JavaScript, Gulp</li>
+                <li class="projects__feature-item">Адаптивная сетка на Flexbox: десктопная и мобильные версии</li>
+                <li class="projects__feature-item">Валидация форм</li>
+                <li class="projects__feature-item">Адаптивная и ретиновая графика</li>
+              </ul>
+            </div>
+          </li>
+          <li class="projects__list-item">
+            <div class="projects__description">
+              <div class="projects__title-wrapper">
+                <a class="projects__heading-link" name="kekstagram" href="/projects/kekstagram"><h3>Проект «Кекстаграм»</h3></a>
+                <a class="projects__git-link" href="https://github.com/intknwn/991089-kekstagram-19">
+                  <span class="visually-hidden">Репозиторий проекта</span>
+                  <svg class="icon projects__git-icon" role="img" width="25" height="25">
+                    <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="projects__image-wrapper">
+                <a class="projects__image-link" href="/projects/kekstagram">
+                  <picture>
+                    <source type="image/webp" srcset="img/kekstagram-01@1x.webp 1x, img/kekstagram-01@2x.webp 2x">
+                    <img src="img/kekstagram-01@1x.png" srcset="img/kekstagram-01@2x.png 2x" width="250" height="333" alt="Проект «Кекстаграм»">
+                  </picture>
+                </a>
+                <a class="projects__image-link" href="/projects/kekstagram">
+                  <picture>
+                    <source type="image/webp" srcset="img/kekstagram-02@1x.webp 1x, img/kekstagram-02@2x.webp 2x">
+                    <img src="img/kekstagram-02@1x.png" srcset="img/kekstagram-02@2x.png 2x" width="250" height="333" alt="Проект «Кекстаграм»">
+                  </picture>
+                </a>
+              </div>
+              <p>Кекстаграм — сервис просмотра изображений. Пользователям предоставлена возможность загружать свои фотографии или просматривать фотографии, загруженные ранее другими пользователями.</p>
+              <ul class="projects__features-list">
+                <li class="projects__feature-item">HTML, CSS, JavaScript, IIFE-модули</li>
+                <li class="projects__feature-item">Загрузка фотографий и наложение эффектов</li>
+                <li class="projects__feature-item">Получение фотографий пользователей с помощью REST API</li>
+                <li class="projects__feature-item">Добавление комментариев</li>
+                <li class="projects__feature-item">Валидация форм</li>
+              </ul>
+            </div>
+          </li>
+          <li class="projects__list-item">
+            <div class="projects__description">
+              <div class="projects__title-wrapper">
+                <a class="projects__heading-link" name="mishka" href="/projects/mishka"><h3>Проект «Мишка»</h3></a>
+                <a class="projects__git-link" href="https://github.com/intknwn/991089-mishka-18">
+                  <span class="visually-hidden">Репозиторий проекта</span>
+                  <svg class="icon projects__git-icon" role="img" width="25" height="25">
+                    <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="projects__image-wrapper">
+                <a class="projects__image-link" href="/projects/mishka">
+                  <picture>
+                    <source type="image/webp" srcset="img/mishka-01@1x.webp 1x, img/mishka-01@2x.webp 2x">
+                    <img src="img/mishka-01@1x.png" srcset="img/mishka-01@2x.png 2x" width="250" height="333" alt="Проект «Мишка»">
+                  </picture>
+                </a>
+                <a class="projects__image-link" href="/projects/mishka">
+                  <picture>
+                    <source type="image/webp" srcset="img/mishka-02@1x.webp 1x, img/mishka-02@2x.webp 2x">
+                    <img src="img/mishka-02@1x.png" srcset="img/mishka-02@2x.png 2x" width="250" height="333" alt="Проект «Мишка»">
+                  </picture>
+                </a>
+              </div>
+              <p>Интернет-магазин милых вещиц для дома ручной работы.</p>
+              <ul class="projects__features-list">
+                <li class="projects__feature-item">HTML, CSS, Gulp</li>
+                <li class="projects__feature-item">Сложная адаптивная сетка: десктопная и мобильные версии</li>
+                <li class="projects__feature-item">Множество декоративных элементов</li>
+                <li class="projects__feature-item">Кастомные поля ввода</li>
+                <li class="projects__feature-item">Адаптивная и ретиновая графика</li>
+                <li class="projects__feature-item">Поддержка IE11</li>
+              </ul>
+            </div>
+          </li>
+          <li class="projects__list-item">
+            <div class="projects__description">
+              <div class="projects__title-wrapper">
+                <a class="projects__heading-link" name="technomart" href="/projects/technomart"><h3>Проект «Техномарт»</h3></a>
+                <a class="projects__git-link" href="https://github.com/intknwn/991089-technomart-26">
+                  <span class="visually-hidden">Репозиторий проекта</span>
+                  <svg class="icon projects__git-icon" role="img" width="25" height="25">
+                    <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="projects__image-wrapper">
+                <a class="projects__image-link" href="/projects/technomart">
+                  <picture>
+                    <source type="image/webp" srcset="img/technomart-01@1x.webp 1x, img/technomart-01@2x.webp 2x">
+                    <img src="img/technomart-01@1x.png" srcset="img/technomart-01@2x.png 2x" width="250" height="333" alt="Проект «Техномарт»">
+                  </picture>
+                </a>
+                <a class="projects__image-link" href="/projects/technomart">
+                  <picture>
+                    <source type="image/webp" srcset="img/technomart-02@1x.webp 1x, img/technomart-02@2x.webp 2x">
+                    <img src="img/technomart-02@1x.png" srcset="img/technomart-02@2x.png 2x" width="250" height="333" alt="Проект «Техномарт»">
+                  </picture>
+                </a>
+              </div>
+              <p>Интернет-магазин строительных материалов и инструментов для дома.</p>
+              <ul class="projects__features-list">
+                <li class="projects__feature-item">HTML, CSS</li>
+                <li class="projects__feature-item">Проект начального уровная с фиксированной сеткой на Flexbox</li>
+                <li class="projects__feature-item">Кастомные поля ввода</li>
+                <li class="projects__feature-item">Поддержка IE11</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="jobs">
+      <div class="container jobs__container">
+        <h2>Где работал</h2>
+        <ul class="jobs__list">
+          <li class="jobs__list-item">
+            <div class="jobs__logo-wrapper">
+              <a href="https://liga-a.ru/"><img src="img/logo-liga-a.svg" width="120" height="27" alt="Лига А."></a>
+            </div>
+            <div class="jobs__description">
+              <h3><a href="https://liga-a.ru/">Лига А.</a></h3>
+              <p>Фронтенд-аутсорс</p>
+              <p class="jobs__employer-location">Санкт-Петербург</p>
+              <p class="jobs__employee-title">Стажер front-end разработчик</p>
+              <p class="jobs__employment-duration">Сентябрь 2020 — Декабрь 2020</p>
+              <p class="jobs__duties">Обязанности:</p>
+              <ul class="jobs__duties-list">
+                <li class="jobs__duties-item">Адаптивная верстка</li>
+                <li class="jobs__duties-item">Анимация UI</li>
+                <li class="jobs__duties-item">Программирование логики на JavaScript</li>
+              </ul>
+              <p class="jobs__achievements">Достижения:</p>
+              <p class="jobs__achievements-intro">Реализовал проект сайта интерактивной презентации:</p>
+              <ul class="jobs__achievements-list">
+                <li class="jobs__achievements-item">сделал резиновую верстку десктопной версии сайта</li>
+                <li class="jobs__achievements-item">интегрировал микроанимации в верстку (Animate.css, Lottie)</li>
+                <li class="jobs__achievements-item">на нативном JS написал логику переключения экранов презентации (переключение триггерит каскад асинхронных операций с DOM узлами и анимацией)</li>
+                <li class="jobs__achievements-item">реализовал интерактивность SVG-карты (показ модальных окон и анимацию элементов карты)</li>
+                <li class="jobs__achievements-item">реализовал “ленивую” загрузку ресурсов с помощью Intersection Observer API</li>
+              </ul>
+            </div>
+          </li>
+          <li class="jobs__list-item">
+            <div class="jobs__logo-wrapper">
+              <a href="https://sprinthost.ru/"><img src="img/logo-sprinthost.svg" width="120" height="56" alt="Лига А."></a>
+            </div>
+            <div class="jobs__description">
+              <h3><a href="https://sprinthost.ru/">ООО «СПРИНТХОСТ.РУ»</a></h3>
+              <p>Хостинговая компания</p>
+              <p class="jobs__employer-location">Санкт-Петербург</p>
+              <p class="jobs__employee-title">Заместитель руководителя группы обслуживания клиентов</p>
+              <p class="jobs__employment-duration">Июль 2014 — Январь 2015</p>
+              <p class="jobs__duties">Обязанности:</p>
+              <ul class="jobs__duties-list">
+                <li class="jobs__duties-item">Координация работы сотрудников группы обслуживания</li>
+                <li class="jobs__duties-item">Контроль качества обслуживания клиентов</li>
+                <li class="jobs__duties-item">Проведение собеседований с кандидатами</li>
+                <li class="jobs__duties-item">Обучение персонала</li>
+                <li class="jobs__duties-item">Курирование ключевых клиентов компании</li>
+              </ul>
+              <p class="jobs__achievements">Достижения (релевантные):</p>
+              <ul class="jobs__achievements-list">
+                <li class="jobs__achievements-item">Внес предложения по улучшению UI/UX биллинговой системы компании, часть которых впоследствии была реализована</li>
+                <li class="jobs__achievements-item">Разработал прототип FAQ раздела сайта компании с использованием HTML, CSS, jQuery</li>
+                <li class="jobs__achievements-item">Научился работать в ОС семейства Linux, изучил основы Bash</li>
+                <li class="jobs__achievements-item">Получил представление о работе протокола HTTP, системы доменных имен DNS</li>
+              </ul>
+              <p class="jobs__employee-title">Консультант группы обслуживания клиентов</p>
+              <p class="jobs__employment-duration">Ноябрь 2012 — Июнь 2014</p>
+              <p class="jobs__duties">Обязанности:</p>
+              <ul class="jobs__duties-list">
+                <li class="jobs__duties-item">Консультирование клиентов в Cerberus Helpdesk и он-лайн чате</li>
+                <li class="jobs__duties-item">Диагностика причин неработоспособности клиентских сайтов</li>
+                <li class="jobs__duties-item">Обязанности старшего сотрудника смены (контроль работы и распределение нагрузки между сотрудниками, мониторинг работы сервисов технической площадки, урегулирование внештатных ситуаций)</li>
+              </ul>
+              <p class="jobs__achievements">Достижения (релевантные):</p>
+              <ul class="jobs__achievements-list">
+                <li class="jobs__achievements-item">стал первым сотрудником компании работающим по индивидуальному графику (закрыл потребности компании и свои)</li>
+                <li class="jobs__achievements-item">факультативно прошел курс обучения специалиста технической поддержки компании</li>
+                <li class="jobs__achievements-item">был повышен в должности до заместителя руководителя отдела</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="courses">
+      <div class="container courses__container">
+        <h2>Где учился</h2>
+        <ul class="courses__providers-list">
+          <li class="courses__providers-list-item">
+            <div class="courses__logo-wrapper">
+              <a href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" width="161" height="55" alt="Лига А."></a>
+            </div>
+            <div class="courses__description">
+              <h3><a href="https://htmlacademy.ru/">HTML Academy</a></h3>
+              <p>Интерактивные онлайн-курсы</p>
+              <ul class="courses__list">
+                <li class="courses__list-item">
+                  <div class="courses__course-description">
+                    <h4><a href="" class="courses__course-name">React. Разработка сложных клиентских приложений</a></h4>
+                    <p class="courses__course-duration">Июнь 2020 — Август 2020</p>
+                    <p class="courses__achievements-intro">При прохождении курса научился:</p>
+                    <ul class="courses__achivements-list">
+                      <li class="courses__achievements-item">создавать функциональные и класс-компоненты</li>
+                      <li class="courses__achievements-item">работать с Flux-архитектурой: действиями, диспетчерами, представлениями</li>
+                      <li class="courses__achievements-item">использовать Redux для управления состоянием приложения</li>
+                      <li class="courses__achievements-item">внедрять асинхронный код в Redux с помощью Middleware</li>
+                      <li class="courses__achievements-item">реализовывать маршрутизацию с помощью пакета React Router</li>
+                      <li class="courses__achievements-item">разработке через тестирование (TDD) с использованием Jest и Anzyme</li>
+                    </ul>
+                  </div>
+                  <div class="courses__course-certificate">
+                    <a href="https://assets.htmlacademy.ru/certificates/intensive/147/991089.pdf?1597323911">
+                      <picture>
+                        <source type="image/webp" srcset="img/certificate-react@2x.webp">
+                        <img src="img/certificate-react@2x.png" width="150" height="211" alt="Сертификат об успешном прохождении курса «React. Разработка сложных клиентских приложений»">
+                      </picture>
+                    </a>
+                    <p class="courses__project courses__project--aside">Защитил проект <a class="courses__project-link" href="#six-cities">«Шесть городов»</a></p>
+                  </div>
+                </li>
+                <li class="courses__list-item">
+                  <div class="courses__course-description">
+                    <h4><a href="" class="courses__course-name">JavaScript. Архитектура клиентских приложений</a></h4>
+                    <p class="courses__course-duration">Март 2020 — Май 2020</p>
+                    <p class="courses__achievements-intro">При прохождении курса научился:</p>
+                    <ul class="courses__achivements-list">
+                      <li class="courses__achievements-item">использовать полиморфизм и наследование при реализации принципов ООП в JavaScript</li>
+                      <li class="courses__achievements-item">разбивать проект на модули и использовать Webpack для сборки</li>
+                      <li class="courses__achievements-item">строить архитектуру SPA на основе паттерна MVC</li>
+                      <li class="courses__achievements-item">получать данные с сервера с помощью REST API</li>
+                      <li class="courses__achievements-item">работать с асинхронным кодом с помощью объекта Promise</li>
+                      <li class="courses__achievements-item">использовать Service Workers для работы приложения в offline</li>
+                    </ul>
+                  </div>
+                  <div class="courses__course-certificate">
+                    <a href="https://assets.htmlacademy.ru/certificates/intensive/145/991089.pdf?1591025955">
+                      <picture>
+                        <source type="image/webp" srcset="img/certificate-js2@2x.webp">
+                        <img src="img/certificate-js2@2x.png" width="150" height="211" alt="Сертификат об успешном прохождении курса «JavaScript. Архитектура клиентских приложений»">
+                      </picture>
+                    </a>
+                    <p class="courses__project courses__project--aside">Защитил проект <a class="courses__project-link" href="#big-trip">«Большое путешествие»</a></p>
+                  </div>
+                </li>
+                <li class="courses__list-item">
+                  <div class="courses__course-description">
+                    <h4><a href="" class="courses__course-name">Профессия «Фронтенд-разработчик»</a></h4>
+                    <p class="courses__course-duration">Сентябрь 2019 — Март 2020</p>
+                    <p class="courses__achievements-intro">В процессе прохождения интенсива «HTML и CSS, уровень 1» научился:</p>
+                    <ul class="courses__achivements-list">
+                      <li class="courses__achievements-item">делать семантическую и доступную верстку</li>
+                      <li class="courses__achievements-item">строить сетки с использованием Flexbox и Grid</li>
+                      <li class="courses__achievements-item">работать с инспекторами графики Figma, Zeplin и редактором Photoshop</li>
+                      <li class="courses__achievements-item">экспортировать и оптимизировать графику для веб, разобрался в форматах</li>
+                      <li class="courses__achievements-item">создавать структуру стилей</li>
+                      <li class="courses__achievements-item">тестировать верстку на переполнение</li>
+                      <li class="courses__achievements-item">работать с типографикой и подключать шрифты</li>
+                    </ul>
+                    <p class="courses__project">Защитил проект <a class="courses__project-link" href="#technomart">«Техномарт»</a></p>
+                    <p class="courses__achievements-intro">В процессе прохождения интенсива «HTML и CSS, уровень 2» научился:</p>
+                    <ul class="courses__achivements-list">
+                      <li class="courses__achievements-item">использовать методологию БЭМ</li>
+                      <li class="courses__achievements-item">автоматизировать сборку с помощью таск-менеджера Gulp</li>
+                      <li class="courses__achievements-item">использовать препроцессоры Sass и Less</li>
+                      <li class="courses__achievements-item">делать адаптивные сетки</li>
+                      <li class="courses__achievements-item">использовать векторную графику и спрайты, адаптировать графику для retina-дисплеев</li>
+                      <li class="courses__achievements-item">оптимизировать производительность сайта с помощью Lighthouse</li>
+                    </ul>
+                    <p class="courses__project">Защитил проект <a class="courses__project-link" href="#mishka">«Мишка»</a></p>
+                    <p class="courses__achievements-intro">В процессе прохождения интенсива «JavaScript, уровень 1» научился:</p>
+                    <ul class="courses__achivements-list">
+                      <li class="courses__achievements-item">техникам дебагинга в DevTools</li>
+                      <li class="courses__achievements-item">работать с событиями в браузере</li>
+                      <li class="courses__achievements-item">манипулировать DOM-элементами</li>
+                      <li class="courses__achievements-item">использовать принцип DRY</li>
+                      <li class="courses__achievements-item">делать запросы к серверу с помощью XMLHttpRequest</li>
+                      <li class="courses__achievements-item">обрабатывать сетевые ошибки</li>
+                    </ul>
+                    <p class="courses__project">Защитил проект <a class="courses__project-link" href="#kekstagram">«Кекстаграм»</a></p>
+                  </div>
+                  <div class="courses__course-certificate">
+                    <a href="https://assets.htmlacademy.ru/certificates/profession/6/991089.pdf?1584335914&_ga=2.89329051.186358415.1618813787-1355762228.1581679808">
+                      <picture>
+                        <source type="image/webp" srcset="img/certificate-frontend@2x.webp">
+                        <img src="img/certificate-frontend@2x.png" width="150" height="211" alt="Сертификат об успешном прохождении профессии «Фронтенд-разработчик»">
+                      </picture>
+                    </a>
+                    <p class="courses__project courses__project--aside">Прошел курс «Фронтенд-разработчик»</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="courses__providers-list-item">
+            <div class="courses__logo-wrapper">
+              <a href="https://ru.hexlet.io/"><img src="img/logo-hexlet.jpg" width="70" height="100" alt="Hexlet"></a>
+            </div>
+            <div class="courses__description">
+              <h3><a href="https://htmlacademy.ru/">Hexlet</a></h3>
+              <p>Интерактивные онлайн-курсы</p>
+              <ul class="courses__list">
+                <li class="courses__list-item">
+                  <div class="courses__course-description">
+                    <h4><a href="" class="courses__course-name">Node.js-программист</a></h4>
+                    <p class="courses__course-duration">Ноябрь 2017 — Май 2018</p>
+                    <p class="courses__achievements-intro">При прохождении курса научился:</p>
+                    <ul class="courses__achivements-list">
+                      <li class="courses__achievements-item">настраивать среду разработки</li>
+                      <li class="courses__achievements-item">устанавливать библиотеки, создавать свои NPM пакеты</li>
+                      <li class="courses__achievements-item">основам JavaScript (ES6)</li>
+                      <li class="courses__achievements-item">функциональному подходу к программированию</li>
+                      <li class="courses__achievements-item">принципам ООП</li>
+                    </ul>
+                    <p class="courses__achievements-intro">Сделал консольные приложения:</p>
+                    <ul class="courses__projects-list">
+                      <li class="courses__project-item"><a href="https://github.com/intknwn/project-lvl1-s260">Логические игры "Brain Games"</a></li>
+                      <li class="courses__project-item"><a href="https://github.com/intknwn/project-lvl2-s261">Утилита для сравнения конфигурационных файлов</a></li>
+                      <li class="courses__project-item"><a href="https://github.com/intknwn/project-lvl3-s322">Утилита для сохранения веб-страниц</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <h2>Что дальше</h2>
+        <p>Если Вы&nbsp;считаете, что я&nbsp;могу быть полезен вашей компании, пожалуйста, свяжитесь со&nbsp;мной удобным для Вас способом.</p>
+        <span class="footer__contact-emoji">🤙</span>
+        <h3>Мои контакты:</h3>
+        <ul class="footer__contacts-list contacts-list">
+          <li>
+            <a href="https://telegram.me/nemitya">
+              <span class="visually-hidden">Мой аккаунт в Telegram</span>
+              <svg class="icon footer__icon" role="img" width="50" height="50">
+                <use xlink:href="img/sprite_auto.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/6287754549006">
+              <span class="visually-hidden">Мой аккаунт в WhatsApp</span>
+              <svg class="icon footer__icon" role="img" width="50" height="50">
+                <use xlink:href="img/sprite_auto.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:intknwn@gmail.com">
+              <span class="visually-hidden">Моя почта</span>
+              <svg class="icon footer__icon" role="img" width="50" height="50">
+                <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
